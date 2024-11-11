@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+/* general styles */
+button {
+  font-family: "League Spartan", sans-serif;
+}
+
 body {
   font-family: "League Spartan", sans-serif;
   background: hsl(222, 26%, 31%);
@@ -16,5 +21,5 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
+  height: 100vh;
 }
