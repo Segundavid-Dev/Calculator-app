@@ -10,16 +10,33 @@
 /* general styles */
 button {
   font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  color: hsl(221, 14%, 31%);
+  padding: 10px;
 }
 
 body {
   font-family: "League Spartan", sans-serif;
   background: hsl(222, 26%, 31%);
+  color: hsl(0, 0%, 100%);
 }
 
 .container {
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  flex-direction: column;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(4, 30px);
+  grid-gap: 10px;
+}
+
+.span_two {
+  display: grid;
+  grid-column: span 2; /*span two columns*/
 }
