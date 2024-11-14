@@ -63,9 +63,7 @@ body {
   align-items: flex-end;
   justify-content: space-evenly;
 }
-.display__input {
-  font-size: 14px;
-}
+
 .display__output {
   font-size: 32px;
   margin-top: 10px;
@@ -86,24 +84,21 @@ body {
   grid-column: span 2; /*span two columns*/
 }
 
-.operator__dark {
+.dark {
   background-color: hsl(224, 28%, 35%);
   color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
 }
 
-.operator__dark:hover {
+.dark:hover {
   background: hsl(225, 21%, 49%);
 }
 
-.operator__orange {
+.orange {
   background-color: hsl(6, 63%, 50%);
   color: hsl(0, 0%, 100%);
 }
 
-.operator__orange:hover {
+.orange:hover {
   background-color: hsl(7, 56%, 60%);
-}
-
-.reset {
-  text-transform: uppercase;
 }
