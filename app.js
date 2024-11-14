@@ -16,15 +16,19 @@ for (let key of keys) {
 
   key.addEventListener("click", function () {
     if (value === "reset") {
-      input = "";
+      input = ""; //reset the input string to empty
       displayInput.innerHTML = "";
       displayOutput.innerHTML = "";
     } else if (value === "delete") {
       input = input.slice(0, -1); // remove last element on the string
       displayInput.innerHTML = input;
+      console.log(input);
     } else if (value === "=") {
       let result = eval(input); // eval function to perform calculations
-      displayInput.innerHTML = result;
+      displayOutput.innerHTML = result;
+    } else {
+      input += value; //concatenate key value to input
+      displayInput.innerHTML = input;
     }
   });
 }
